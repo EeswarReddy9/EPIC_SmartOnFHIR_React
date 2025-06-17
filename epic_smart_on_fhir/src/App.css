@@ -1,0 +1,85 @@
+/* src/App.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #040734;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.box-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 550px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-image {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.Login-btn {
+  border: 2px solid;
+  border-color: #FEC1A6;
+  color: #ED2A1A;
+  padding: 15px 65px;
+  font-weight: 600;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 10px 0;
+  background-color: #040734;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent 0%, #13c6b7 50%, transparent 100%);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+

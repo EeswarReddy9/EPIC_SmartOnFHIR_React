@@ -1,0 +1,56 @@
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+  }
+
+
+.patient-table th {
+  background-color: #040734;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+  
+
+.patient-table td {
+  padding: 12px 16px;
+  color: #1e1e2f;
+  text-align: left;
+  border: none;
+}
+
+.patient-table tbody tr:hover {
+  transition: background-color 0.3s ease;
+}
+  
+ 
+  
+  .patient-row:hover {
+    cursor: pointer;
+  }
+  
+  .patient-action-button {
+    background-color: #13c6b7;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .patient-action-button:hover {
+    background-color: #040734;
+  }
+  
+  .loading-indicator {
+    margin-top: 10px;
+    color: #aaa;
+  }
+  

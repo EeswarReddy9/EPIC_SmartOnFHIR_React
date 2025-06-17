@@ -1,0 +1,88 @@
+.cost-summary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  margin-top: 15px;
+  padding-left: 3px;
+}
+
+.cost-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.cost-card {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 4px solid;
+  border-left-width: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cost-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.cost-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header h4 {
+  font-weight: 600;
+  color: #1e3a8a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.emergency { border-color: #ff6b6b; }
+.inpatient { border-color: #4ecdc4; }
+.other-costs { border-color: #45b7d1; }
+.total-costs { border-color: #96ceb4; }
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px; 
+  min-height: 2px; 
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.cost-item:hover {
+  transform: translateX(4px);
+}
+
+.cost-item span {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.cost-item strong {
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.cost-item span,
+.cost-item strong {
+  font-size: 0.85rem; 
+}
+
+

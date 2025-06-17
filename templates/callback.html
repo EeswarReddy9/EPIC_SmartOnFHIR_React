@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAuth Callback</title>
+  <script>
+    // Store the tokens in localStorage or pass them directly to React
+    window.localStorage.setItem('access_token', '{{ access_token }}');
+    window.localStorage.setItem('token_type', '{{ token_type }}');
+  </script>
+</head>
+<body>
+  <h1>OAuth Successful!</h1>
+  <p>You will be redirected shortly...</p>
+</body>
+</html>

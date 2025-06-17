@@ -1,0 +1,86 @@
+
+/* Critical Items Container */
+.Critical-container {
+  background: linear-gradient(to right, #fff8f0 0%, #fff1e0 100%);
+  border-left: 4px solid #ff9a3d;
+  padding: 20px;
+  width: 40%;
+  border-radius: 0 12px 12px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.Critical-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><path d="M28,28 Q50,10 72,28 T100,50 Q90,72 72,72 T28,72 Q10,50 28,28Z" fill="orange"/></svg>');
+  background-size: 120px;
+  opacity: 0.3;
+}
+
+.Critical-container h2 {
+  color: #c05621;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Critical-container h2::before {
+  content: "⚠️";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.Critical-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Critical-container li {
+  padding: 10px 0;
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(255, 154, 61, 0.2);
+}
+
+.Critical-container li:last-child {
+  border-bottom: none;
+}
+
+.Critical-container li::before {
+  content: "•";
+  color: #ff9a3d;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.Critical-container li strong {
+  color: #dd6b20;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .demographics-container {
+    flex-direction: column;
+  }
+  
+  .Critical-container {
+    width: 100%;
+    border-left: none;
+    border-top: 4px solid #ff9a3d;
+    border-radius: 0 0 12px 12px;
+  }
+}

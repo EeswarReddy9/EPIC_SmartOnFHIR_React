@@ -16,7 +16,7 @@ email_app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'   # or 'None' if cross-site
 email_app.config['SESSION_COOKIE_SECURE'] = False     # True if over HTTPS
 email_app.secret_key = secrets.token_hex(16)
 
-grant_type = 'client_credentials'
+grant_type = 'client_credentials' 
 token_type = 'Bearer'
 client_id = '997267a9-f1b9-4871-bd23-b6e91eb11524'
 client_secret = '943258f9-7783-49d0-aa51-14bec7d968fe'
